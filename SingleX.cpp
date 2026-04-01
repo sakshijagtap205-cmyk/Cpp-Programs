@@ -1,1 +1,33 @@
+#include<iostream>
+using namespace std;
+class Base 
+{
+    public:
+        int i,j;
+        void fun()
+        {
+            cout<<"inside base fun\n";
+        }
+};
+class Derived: public Base
+{
+    public:
+        int X;
 
+            void gun()
+            {
+                cout<<"Inside Derived gun\n";
+            }
+};
+int main()
+
+{
+    Base bobj;
+
+    Derived dobj;
+    dobj.fun();
+    dobj.gun();
+
+    
+    return 0;
+}
